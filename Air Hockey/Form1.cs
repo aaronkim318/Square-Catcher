@@ -35,6 +35,9 @@ namespace Air_Hockey
         int player1Score = 0;
         int player2Score = 0;
 
+        int p1Counter = -1;
+        int p2Counter = -1;
+
         int player1Speed = 6;
         int player2Speed = 6;
 
@@ -147,7 +150,13 @@ namespace Air_Hockey
                 boost.Y = y2;
                 player1Speed += 2;
                 zoom.Play();
+                p1Counter = 100;
                 
+            }
+            p1Counter--;
+            if (p1Counter == 0)
+            {
+                player1Speed -= 2;
             }
             if (player2.IntersectsWith(boost))
             {
@@ -155,10 +164,15 @@ namespace Air_Hockey
                 boost.Y = y2;
                 player2Speed += 2;
                 zoom.Play();
+                p2Counter = 100;
             }
-
-            //moves player 1
-            if (wDown == true && player1.Y > 3)
+            p2Counter--;
+            if (p2Counter == 0)
+            {
+                player2Speed -= 2;
+            }
+                //moves player 1
+                if (wDown == true && player1.Y > 3)
             {
                 player1.Y -= player1Speed;
             }
