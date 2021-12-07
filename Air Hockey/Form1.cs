@@ -22,13 +22,13 @@ namespace Air_Hockey
         SoundPlayer winning = new SoundPlayer(Properties.Resources._156420__rauliphone__winning);
         SoundPlayer zoom = new SoundPlayer(Properties.Resources._62139__tkshredder__zoomin);
         
-
+        SolidBrush redBrush = new SolidBrush(Color.Red);
         SolidBrush blueBrush = new SolidBrush(Color.DodgerBlue);
         SolidBrush whiteBrush = new SolidBrush(Color.White);
         SolidBrush yellowBrush = new SolidBrush(Color.Yellow);
 
-        Rectangle player1 = new Rectangle(235, 35, 60, 10);
-        Rectangle player2 = new Rectangle(235, 465, 60, 10);
+        Rectangle player1 = new Rectangle(235, 35, 20, 20);
+        Rectangle player2 = new Rectangle(235, 465, 20, 20);
         Rectangle ball = new Rectangle(150, 195, 10, 10);
         Rectangle boost = new Rectangle(30, 270, 8, 8);
 
@@ -222,7 +222,7 @@ namespace Air_Hockey
         }
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.FillRectangle(blueBrush, player1);
+            e.Graphics.FillRectangle(redBrush, player1);
             e.Graphics.FillRectangle(blueBrush, player2);
             e.Graphics.FillRectangle(whiteBrush, ball);
             e.Graphics.FillRectangle(yellowBrush, boost);
