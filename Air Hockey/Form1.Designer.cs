@@ -82,9 +82,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(702, 635);
+            this.ClientSize = new System.Drawing.Size(732, 640);
             this.Controls.Add(this.p2Label);
             this.Controls.Add(this.p1Label);
             this.Controls.Add(this.winLabel);

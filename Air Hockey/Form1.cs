@@ -158,7 +158,7 @@ namespace Air_Hockey
             }
 
             //moves player 1
-            if (wDown == true && player1.Y > 0)
+            if (wDown == true && player1.Y > 3)
             {
                 player1.Y -= player1Speed;
             }
@@ -167,7 +167,7 @@ namespace Air_Hockey
             {
                 player1.Y += player1Speed;
             }
-            if (aDown == true && player1.X > 0)
+            if (aDown == true && player1.X > 2)
             {
                 player1.X -= player1Speed;
             }
@@ -178,7 +178,7 @@ namespace Air_Hockey
             }
 
             //move player 2 
-            if (upArrowDown == true && player2.Y > 0)
+            if (upArrowDown == true && player2.Y > 3)
             {
                 player2.Y -= player2Speed;
             }
@@ -188,7 +188,7 @@ namespace Air_Hockey
                 player2.Y += player2Speed;
             }
 
-            if (leftDown == true && player2.X > 0)
+            if (leftDown == true && player2.X > 2)
             {
                 player2.X -= player2Speed;
             }
